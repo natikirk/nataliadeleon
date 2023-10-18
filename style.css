@@ -57,27 +57,29 @@ main {
         justify-content: center;
         width: 100%;
         height: 100%;
-        padding-left: 7vw;
+        
     }
 
 .column {
         display: flex;
         flex-direction: column;
         width: 70%;
+        padding-left: 45px;
+        /*reference width to change menu bar to top*/
     }
       
 .column2 {
           display: flex;
           flex-direction: column;
           width: 30%;
+          padding-left: 45px;
     }
 
     ul {
         list-style-type: none;
-        
         padding: 1rex;
         padding-bottom: 3vh;
-        width: 5vw;
+        /*adding width will flex the content*/
         position: fixed;
         height: 100%;
         overflow: auto;
@@ -90,19 +92,20 @@ main {
       
       li a {
         display: block;
-        border: 1px solid crimson;
         outline: none;
         color: black;
         cursor: pointer;
-        padding: 0.3rex;
+        padding: 1rex;
         border-radius: 1rex;
         margin: 1rex;
         text-decoration: none;
         text-align: center;
+        font-size: larger;
+        line-height: 1.2rem;
       }
       
       li a.active {
-        background-color: #555;
+        background-color: #000000;
         color: white;
       }
       
@@ -145,7 +148,7 @@ p {
 p.three {
   font-size: larger;
   line-height: 1.2rem;
-}
+  }
 
 .menu { 
   border-bottom: 1px solid rgb(29, 29, 29);
