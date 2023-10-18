@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+  }
+
+    body {
+      display: block;
+      background-color: #F4F4F2;
+      margin-bottom: 12vh;
+      font-family: 'Overpass Mono', monospace;
+  }
+
+  {
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: #2656FF;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    border: solid 1px;
+    border-color: black;
+    background: #F4F4ED;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: crimson;  
+    }
+
+header {
+display: flex;
+justify-content: flex-start;
+border-bottom: 5px solid crimson;
+padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-image: image();
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+.portrait {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  object-fit: cover;
+}
+
+footer {
+    /*display: flex;
+    align-items: flex-start;
+    justify-content: space-between;*/
+    text-align: center;
+    border-top: 2px solid crimson;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #F4F4ED;
+}
+
+.center {
+    text-align: center;
+  }
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap
+  }
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap
+  }
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+p.three {
+  font-size: larger;
+  line-height: 1.2rem;
+}
+
+.menu { 
+  border-bottom: 1px solid crimson;
+  margin-bottom: 0.8rem; padding-bottom:
+  0.8rem; border-top: 1px solid crimson;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menuthree { 
+  border-bottom: 1px solid crimson;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-top: 1px solid crimson;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menuthree:hover {
+  background-color: crimson;
+  cursor: pointer;
+}
+
+
+h1 {
+font-style: italic;
+font-size: 1.5rem
+}
+
+h2 {
+    font-style: italic;
+ }
+
+h4 {
+    text-decoration: underline;
+}
+
+h5 {
+padding-bottom: 0.3rem;
+}
+
+a:hover , i:hover , b:hover , span {
+  color: #2656FF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  display: flex;
+  align-self: center;
+}
+
+
+.force-overflow {
+	min-height: 450px;
+}
+
+.container {
+	  display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 4.25rem;
+    right: 2rem;
+    font-size: 0.7rem;
+    border: 1px solid crimson;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    padding: 0.2rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    border-radius: 1rem;
+  }
+
+  
+  #myBtn:hover {
+    background-color: #2656FF;
+  }
+
+ 
+@media screen and (max-width: 698px) {
+    .container {
+      flex-flow: row wrap;
+ }
+
+   .containertwo {
+      flex-flow: row wrap;
+ }
+
+
+ .column {
+  width: 100%;
+}
+
+.column2 {
+  width: 100%;
+}
+
+.columnthree {
+  width: 100%;
+}
+
+}
+
+
