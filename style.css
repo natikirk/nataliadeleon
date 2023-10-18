@@ -46,7 +46,6 @@ main {
     display: flex;
     flex-direction: column;
     height: 80vh;
-    background-image: image();
 }
 
 .box {
