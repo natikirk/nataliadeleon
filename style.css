@@ -85,11 +85,11 @@ main {
       /*reference width to change menu bar to top*/  
   }
 
-  /*
+  
     .column img {
-      object-fit:cover;display:flex;height:100vh;width:70%;
+      object-fit:cover;
     }
-*/
+
     ul {
         list-style-type: none;
         /*adding width will flex the content*/
