@@ -26,32 +26,50 @@
             <div class="container">
             <header class="header">
                 <span class="header__inner">
-                <h5>Natalia De León</h5>
-                <span class="header__right"><p>About</p></span>
+
+        
+                        <a>&gt; Natalia De León</a>
+                      
+                   
+                <span class="header__right">
+                    <nav class="menu"><a>About</a></nav>
+                    <div class="dropdown" style="float:right;">
+                        <button onclick="myFunction()" class="dropbtn"><a>Works</a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Computational Design</a>
+                            <a href="#">Product Design</a>
+                            <a href="#">Sculptures</a>
+                          </div>
+                        </div>
+                    
             </span>
             </header>
 
 
         <div class="content">
             <div class="framed">
-            <h5>Hello friend!</h5>
+            <h1>Hi there!</h1>
             <br>
-            <p>Here is a gallery of my work. I am focused on technology and exploration in morphologies, where the line between humans, machines and codes begin to blurred.</p> 
-            <br>
-            <p>I'm curious, playful and inquisitive collaborative</p>
+            <p>I’m a Dipl. Architect from the TU Simón Bolívar in Caracas, Venezuela. 
+
+            <p>I developed interest on a cross disciplinary culture of computational design and the art of manufacturing. How humans, machines and codes co-exist.
+                I specialized in creative technology, computational design, 3d printers and digital fabrication.</p> 
+            <p>I'm curious, playful and inquisitive collaborative, with a keen eye for design and development.</p>
             </div>
         
 
             <div class="posts">
                         <article class="post">
                             <h1 class="post-title">x3n05ulp7ur3</h1>
-                            <p class="post-meta">A phycsical representation of Data Design</p>
+                            <p class="post-meta">A physical representation of Data Design</p>
                             <figure class="post-cover">
                             <img
                             src="./images/xenotop.png"
                             alt="xeno">
                             </figure>
-                            <div class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.</div>
+                            <div class="post-content">2020, Computational Design and 3d Print technology, 750x350mm
+
+                            </div>
                         </article>
             </div>
 
@@ -64,7 +82,9 @@
                     src="./images/Crown_Portrait.png"
                     alt="xeno">
                     </figure>
-                    <div class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.</div>
+                    <div class="post-content">
+                    2023, Computational Design and 3D print technology, 25cm diameter.
+                    </div>
                 </article>
             </div>
 
@@ -135,6 +155,26 @@
               document.body.scrollTop = 0;
               document.documentElement.scrollTop = 0;
             }
+
+            /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
             </script>
     
         </body>

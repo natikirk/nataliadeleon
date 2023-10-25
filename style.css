@@ -5,10 +5,10 @@
   }
 
     body {
-      display: block;
-      background-color: #F4F4F2;
-      font-family: 'Overpass Mono', monospace;
-      --phoneWidth: (max-width: 684px);
+    display: block;
+    background-color: #F4F4F2;
+    font-family: 'Overpass Mono', monospace;
+    --phoneWidth: (max-width: 684px);
     --tabletWidth: (max-width: 900px);
     margin: 0;
     padding: 0;
@@ -26,6 +26,8 @@ header {
     justify-content: center;
     position: relative;
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: #D3D9DE;
 }
 
@@ -47,6 +49,65 @@ span.header {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.menu {
+  --color: rgba(0, 0, 0, .12);
+  --shadow: 0 8px 20px var(--color);
+  border-right: 1px solid;
+  margin-right: 18px;
+  padding-right: 24px;
+}
+
+nav {
+    display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn .dropbtn:focus {
+  color:#2656FF;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
   
 .container {
@@ -86,6 +147,7 @@ margin: 20px auto;
 
 .post-content {
   margin-top: 30px;
+  text-align: right;
 }
 
 .posts {
@@ -132,14 +194,10 @@ figure {
 }
 
 .post-cover {
-    margin: 40px -50px;
+    margin: 40px -25px;
     width: 860px;
     max-width: 860px;
     box-sizing: inherit;
-}
-
-post:not(:last-of-type) {
-  border-bottom: 1px solid var(--border-color);
 }
 
 p {
@@ -210,7 +268,7 @@ i {
     font-size: 1rem;
     border: 1px solid rgb(29, 29, 29);
     outline: none;
-    color: black;
+    color: rgb(29, 29, 29);
     cursor: pointer;
     padding: 0.3rem;
     padding-right: 0.5rem;
@@ -220,7 +278,8 @@ i {
 
   
   #myBtn:hover {
-    background-color: #2656FF;
+    background-color: #D3D9DE;
+    color: rgb(29, 29, 29);
   }
 
   ::-webkit-scrollbar {
@@ -240,7 +299,7 @@ i {
     }
     
     ::-webkit-scrollbar-thumb:hover {
-    background: crimson;  
+    background: #D3D9DE;  
     }
 
 
