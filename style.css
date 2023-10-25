@@ -64,16 +64,16 @@ nav {
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+  float: right;
+  overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 1rem;  
+  /*color: white;*
+  padding: 14px 16px;*/
   border: none;
   outline: none;
-  color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -90,7 +90,6 @@ nav {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  right: 0;
 }
 
 .dropdown-content a {
@@ -99,7 +98,7 @@ nav {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: right;
 }
 
 .dropdown-content a:hover {
