@@ -342,6 +342,11 @@ article.post {
 
 .footer__inner {
   flex-direction: column;
+  text-align: center;
+}
+.footer .copyright {
+  flex-direction: column;
+  margin-top: 10px;
 }
 
 }
