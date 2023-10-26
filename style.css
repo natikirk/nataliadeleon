@@ -29,6 +29,7 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     background: #D3D9DE;
+    box-sizing: inherit;
 }
 
 span.header {
