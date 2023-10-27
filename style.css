@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    font-size: 0.8rem;
   }
 
 div {
@@ -148,6 +149,7 @@ margin: 20px auto;
 .post-content {
   margin-top: 30px;
   text-align: right;
+  line-height: 1.2rem;
 }
 
 .posts {
@@ -174,12 +176,12 @@ article {
 
 
 .post-title {
-  font-size: 2.625rem;
+  font-size: 2.425rem;
   margin: 0 0 20px;
 }
 
 .post-meta {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 10px;
 }
 
@@ -201,7 +203,7 @@ figure {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.2rem;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -211,7 +213,7 @@ p {
 
 h1 {
 font-style: italic;
-font-size: 1.5rem
+font-size: 1.3rem
 }
 
 h2 {
@@ -239,7 +241,7 @@ margin-bottom: 12px;
 font-size: 1rem;
 }
 
-a:hover , i:hover , b:hover , span {
+a:hover , b:hover {
   color: #2656FF;
   text-decoration: none;
   cursor: pointer;
@@ -247,13 +249,8 @@ a:hover , i:hover , b:hover , span {
 
 a {
   text-decoration: none;
+  font-size: 0.8rem;
 }
-
-i {
-  display: flex;
-  align-self: center;
-}
-
 
 .force-overflow {
 	min-height: 450px;
@@ -265,7 +262,7 @@ i {
     position: fixed;
     bottom: 4.25rem;
     right: 2rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border: 1px solid rgb(29, 29, 29);
     outline: none;
     color: rgb(29, 29, 29);
