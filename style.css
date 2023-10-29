@@ -252,6 +252,9 @@ a {
   font-size: 0.8rem;
 }
 
+a.one {
+font-size:1rem;
+}
 .force-overflow {
 	min-height: 450px;
 }
