@@ -253,8 +253,25 @@ a {
 }
 
 a.one {
-font-size:1rem;
+font-size:0.88rem;
 }
+
+a.read-more, a.read-more:hover, a.read-more:active {
+  display: inline-flex;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 20px 0;
+  font-weight: bold;
+  text align: right;
+}
+
+blockquote {
+  border-left: 2px solid;
+  margin: 40px;
+  padding: 10px 20px;
+}
+
 .force-overflow {
 	min-height: 450px;
 }
