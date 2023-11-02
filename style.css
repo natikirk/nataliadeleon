@@ -131,7 +131,7 @@ nav {
     border-style: solid;
     border-width: 0.1px;
     border-color: rgb(29, 29, 29);
-    border-radius: 0.7rem;
+    /*border-radius: 0.7rem;*/
     margin: 0 -50px 40px;
     padding:50px;
     width:100%;
@@ -266,6 +266,11 @@ a.read-more, a.read-more:hover, a.read-more:active {
   text align: right;
 }
 
+mark {
+  background-color: black;
+  color: white;
+}
+
 blockquote {
   border-left: 2px solid;
   margin: 40px;
@@ -290,7 +295,7 @@ blockquote {
     padding: 0.3rem;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    border-radius: 0.7rem;
+    /*border-radius: 0.7rem;*/
     font-family: inherit;
   }
 
@@ -306,11 +311,11 @@ blockquote {
     }
     
     ::-webkit-scrollbar-track {
-    background: #F4F4F2;
+    background: black;
     }
     
     ::-webkit-scrollbar-thumb {
-    border-radius: 1rem;
+    /*border-radius: 1rem;*/
     border: solid 1px;
     border-color: black;
     background: #F4F4F2;
