@@ -29,7 +29,8 @@ header {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    background: #D3D9DE;
+    /*background: #D3D9DE;*/
+    background: black;
     box-sizing: inherit;
 }
 
@@ -250,10 +251,12 @@ a:hover , b:hover {
 a {
   text-decoration: none;
   font-size: 0.8rem;
+  color: #D3D9DE;
 }
 
 a.one {
 font-size:0.88rem;
+color: #D3D9DE;
 }
 
 a.read-more, a.read-more:hover, a.read-more:active {
