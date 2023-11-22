@@ -10,15 +10,13 @@
     font-family: 'Overpass Mono', monospace;
     --phoneWidth: (max-width: 684px);
     --tabletWidth: (max-width: 900px);
-    margin: 0;
-    padding: 0;
     box-sizing: inherit;
-    font-size: 0.8rem;
   }
 
 div {
     display: block;
     box-sizing: inherit;
+    color: #D3D9DE;
 }
 
 header {
@@ -54,14 +52,6 @@ span.header {
   align-items: center;
 }
 
-.menu {
-  /*--color: rgba(0, 0, 0, .12);
-  --shadow: 0 8px 20px var(--color);
-  border-right: 1px solid;
-  margin-right: 18px;
-  padding-right: 24px;*/
-}
-
 nav {
     display: block;
 }
@@ -82,16 +72,20 @@ nav {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn .dropbtn:focus {
-  color:#2656FF;
+a {
+  text-decoration: none;
+  font-size: 0.8rem;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+a.one {
+font-size:0.88rem;
+text-decoration: none;
+color: #D3D9DE;
+}
+
+.navbar a.one:hover .dropdown:hover .dropbtn .dropbtn:focus {
+  color:#2656FF;
+  cursor: pointer;
 }
 
 .dropdown-content a {
@@ -104,8 +98,35 @@ nav {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #D3D9DE;
 }
+
+a:hover , b:hover {
+  color: #2656FF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+a.read-more, a.read-more:hover, a.read-more:active {
+  display: inline-flex;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 20px 0;
+  font-weight: bold;
+  text align: right;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -242,32 +263,6 @@ margin-bottom: 12px;
 font-size: 1rem;
 }
 
-a:hover , b:hover {
-  color: #2656FF;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-  font-size: 0.8rem;
-  color: #D3D9DE;
-}
-
-a.one {
-font-size:0.88rem;
-color: #D3D9DE;
-}
-
-a.read-more, a.read-more:hover, a.read-more:active {
-  display: inline-flex;
-  background: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 20px 0;
-  font-weight: bold;
-  text align: right;
-}
 
 mark {
   background-color: black;
