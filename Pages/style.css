@@ -11,21 +11,27 @@ body {
 }
 
 header {
+    /*background: #D3D9DE;*/
     background-color: black;
-    padding: 0 15%;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 main {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 0;
 }
 
 .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    width: 760px;
+    max-width: 100%;
     
 }
 
@@ -36,8 +42,8 @@ header a {
 }
 
 footer {
-    background-color: black;
     height: 40px;
+    margin: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +60,8 @@ footer {
     right: 100;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
 }
 
@@ -87,16 +94,16 @@ nav>a {
 /* Content */
 
 .content {
-    max-width: 860px;
-    margin: 12px auto;
+    max-width: 800px;
+    margin: 0 auto;
     border-bottom: 1px solid black;
-    padding-bottom: 25px;
+    padding: 30px 0;
 }
 
 article.cover {
-    height: 90vh;
-    max-width: 860px;
-    margin: 12px auto;
+    max-height: 90vh;
+    max-width: 800px;
+    margin: 30px auto;
 }  
 
 article.cover>img {
@@ -107,21 +114,25 @@ article.cover>img {
 }
 
 article.post {
-    max-width: 860px;
+    max-width: 800px;
     display: flex;
 }
 
+.post-content {
+    text-align: right;
+    line-height: 1.2rem;
+  }
 
 .column {
     width: 50%;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .framed {
     max-width: 860 px;
     border: 1px solid black;
     padding: 50px;
-    margin: 38px 0;
+    margin: 20px 0;
 }
 
 /* Fonts and Effects*/
@@ -133,7 +144,12 @@ a {
 }
 
 p {
-    font-size: 0.83rem; 
+    font-size: 0.83rem;
+    line-height: 1.2rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 p.post-meta {
@@ -183,16 +199,28 @@ a:active {
     background-color: rgb(41, 41, 41);
 }
 
-header a:hover {
+header a:hover, a.read-more:hover{
     color: blue;
     background-color: none;
 }
 
-
+a.read-more {
+    display: inline-flex;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 12px 0;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
 footer>p {
-    color: whitesmoke;
+    color: darkgray;
 }
+
+/*DROPDOWN*/
+
+
 
 /* PHONE */
 
@@ -213,7 +241,7 @@ footer>p {
     
     .column {
         width: 100%;
-        padding: 5px 10px;
+        padding: 0 10px;
     }
 
     .sides-1, .sides-2 {
@@ -235,12 +263,8 @@ footer>p {
         position:initial;
     }
 
-    .side-2 {
-        z-index: 0;
-    }
-
     .content {
-        padding: 0 25px 40px;
+        padding: 40px 25px 40px;
     }
     main {
         padding: 0;
