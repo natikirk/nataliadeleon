@@ -10,6 +10,8 @@ body {
     background-color: #F4F4F2;
 }
 
+/*DROPDOWN AND HEADER*/
+
 header {
     /*background: #D3D9DE;*/
     background-color: black;
@@ -217,10 +219,6 @@ a.read-more {
 footer>p {
     color: darkgray;
 }
-
-/*DROPDOWN*/
-
-
 
 /* PHONE */
 
