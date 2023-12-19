@@ -24,7 +24,6 @@
                             ...
                             <a href="./pages/computationaldesign.html">Selected Works</a>
                             <a href="./pages/sculptures.html">Sculptures</a>
-                            <!-- <a href="Wearables.html">Wearables</a> -->
                             ...
                             <a href="./pages/exhibitions.html">Exhibitions</a>
                           </div>
@@ -48,7 +47,7 @@
             <div class="salute">
                 <h2 style="font-style: italic;">Hi there!</h2>
                 <br>
-                <h2>I'm a <span style="color: blue;">designer</span> and <span style="color: blue;">creative technologist</span> drifting in between <span style="color: red;">art, coding and parametric design.</span> Currently I'm living in Berlin.</h2>
+                <h2>I'm a <span style="color: blue;">designer</span> and <span style="color: blue;">creative technologist</span> drifting in between <!-- <span style="color: red;"> -->art, coding and parametric design.</span> Currently I'm living in Berlin.</h2>
             </div>
        <!--      <h1>Hi there!</h1>
             <br>
@@ -60,81 +59,82 @@
         
 
             <div class="posts">
+              
                         <article class="post">
+        
                             <figure class="post-cover">
+                              <div class="mySlides fade">
                             <img
                             src="./img/2_Xg3n/Reptilian_glasses.png"
-                            alt="reptilians">
+                            alt="reptilians"
+                            onclick="plusSlides(1)">
+                          </div>
+                          <div class="mySlides fade">
+                            <img
+                            src="./img/1_XXVO/xxvo_1.png"
+                            alt="xxvo"
+                            onclick="plusSlides(1)">
+                          </div>
+                          <div class="mySlides fade">
+                            <img
+                            src="./img/9_Xeno/xenotop.png"
+                            alt="Xeno"
+                            onclick="plusSlides(1)">
+                          </div>
+                          <div class="mySlides fade">
+                            <img
+                            src="./img/8_Mog/MOG.png"
+                            alt="mog"
+                            onclick="plusSlides(1)">
+                          </div>
+                          <div class="mySlides fade">
+                            <img
+                            src="./img/4_Bayan Wall/bayan_1.png"
+                            alt="bayanwall"
+                            onclick="plusSlides(1)">
+                          </div>
+                          <div class="mySlides fade">
+                            <img
+                            src="./img/7_Planetarium/Planetarium_1.png"
+                            alt="planetarium"
+                            onclick="plusSlides(1)">
+                          </div>
+                          <div class="mySlides fade">
+                            <img
+                            src="./img/6_AA Visiting/AA_1.png"
+                            alt="AA_VisitingSchool"
+                            onclick="plusSlides(1)">
+                          </div>
+                          <div class="mySlides fade">
+                            <img
+                            src="./img/5_Paramateria/Paramateria_1.png"
+                            alt="paramateria"
+                            onclick="plusSlides(1)">
+                          </div>
+                          <div class="mySlides fade">
+                            <img
+                            src="./img/11_MathandFab/ligas_1.png"
+                            alt="fibonacci"
+                            onclick="plusSlides(1)">
+                          </div>
+                          <div class="mySlides fade">
+                            <img
+                            src="./img/10_Bionic/bionic_2.png"
+                            alt="bionic"
+                            onclick="plusSlides(1)">
+                          </div>
                             </figure>
                         </article>
+              
+              
+              
+              
+              </div>
+
+
             </div>
 
-            <!-- 
-            <div class="posts">
-              <article class="post">
-                  <figure class="post-cover">
-                  <img
-                  src="./Pages/img/1_XXVO/xxvo_1.png"
-                  alt="xxvo">
-                  </figure>
-              </article>
-            </div>
 
-            <div class="posts">
-              <article class="post">
-                  <figure class="post-cover">
-                  <img
-                  src="./images/Latticeshoe.png"
-                  alt="lattieshoe">
-                  </figure>
-              </article>
-            </div>
-            <div class="posts">
-              <article class="post">
-                  <figure class="post-cover">
-                  <img
-                  src="./images/bayanwall.png"
-                  alt="bayanwall">
-                  </figure>
-              </article>
-            </div>
-            <div class="posts">
-              <article class="post">
-                  <figure class="post-cover">
-                  <img
-                  src="./images/paramateria.png"
-                  alt="parameteria">
-                  </figure>
-              </article>
-            </div>
-            <div class="posts">
-              <article class="post">
-                  <figure class="post-cover">
-                  <img
-                  src="./images/ligas.png"
-                  alt="fibonacci">
-                  </figure>
-              </article>
-            </div>
-            <div class="posts">
-              <article class="post">
-                  <figure class="post-cover">
-                  <img
-                  src="./images/AA Visinting School.jpg"
-                  alt="AAVS">
-                  </figure>
-              </article>
-            </div>
-            <div class="posts">
-              <article class="post">
-                  <figure class="post-cover">
-                  <img
-                  src="./images/planetarium.png"
-                  alt="planetarium">
-                  </figure>
-              </article>
-            </div> -->
-        
           </div>
     </div>
             
@@ -156,6 +156,29 @@
           </footer>
            
         <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+
             // Get the button
             let mybutton = document.getElementById("myBtn");
             
