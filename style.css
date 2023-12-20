@@ -351,7 +351,7 @@ blockquote {
 
 /* ANIMATIONS */
 
-.navbar a.one:hover .dropdown:hover .dropbtn .dropbtn:focus {
+.navbar a.one:hover .dropdown:hover {
   color:#2656FF;
   cursor: pointer;
 }
@@ -368,6 +368,9 @@ blockquote {
 
 .dropdown-content a:hover {
   background-color: #D3D9DE;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 a:hover , b:hover {
@@ -386,9 +389,7 @@ a.read-more, a.read-more:hover, a.read-more:active {
   text align: right;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+
 
 #myBtn:hover {
   background-color: #D3D9DE;
